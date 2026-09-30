@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Minta Edzőterem – Fő utca 21.</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f2ff;--ink:#1c1946;--muted:#58557a;--indigo:#1c1946;--coral:#ff4d6d;--sun:#ffd23f;--card:#ffffff;--line:#dcd8f5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12102e;--ink:#f1efff;--muted:#aaa7cf;--card:#1c1946;--line:#35316b}}
+:root[data-theme="dark"]{--bg:#12102e;--ink:#f1efff;--muted:#aaa7cf;--card:#1c1946;--line:#35316b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Barlow,system-ui,sans-serif;line-height:1.6;font-size:18px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase;line-height:1;margin:0;font-weight:800}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;flex-wrap:wrap;gap:10px}
+.logo{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.5rem;text-decoration:none;text-transform:uppercase}
+nav div a{margin-left:18px;text-decoration:none;font-weight:500}
+nav div a:hover{color:var(--sun)}
+.hero{background:var(--indigo);color:#f1efff;padding-bottom:56px}
+.hero .logo,.hero nav a{color:#f1efff}
+.hero h1{font-size:clamp(3.4rem,17vw,8rem);margin:40px 0 18px;letter-spacing:.01em}
+.hero h1 span{display:block;color:var(--coral)}
+.hero p{max-width:34ch;color:#c4c1e6;font-size:1.1rem;margin:0 0 26px}
+.btn{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:500;padding:14px 28px;border-radius:6px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+section{padding:64px 0 0}
+h2{font-size:clamp(2.2rem,8vw,3.4rem);margin-bottom:22px}
+.plans{display:grid;gap:16px}
+.plan{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:22px}
+.plan.hot{border-color:var(--coral)}
+.plan h3{font-size:1.6rem}
+.plan .price{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:2.4rem;color:var(--coral);margin:8px 0}
+.plan .price small{font-size:1rem;color:var(--muted);font-weight:700}
+.plan ul{margin:0;padding-left:20px;color:var(--muted)}
+.sched{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:6px 20px}
+.sched div{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.sched div:last-child{border-bottom:0}
+.sched b{font-weight:500}
+.sched span{color:var(--muted)}
+.about{display:grid;gap:18px;align-items:center}
+.about p{color:var(--muted);margin:0 0 12px;max-width:60ch}
+.stat{background:var(--sun);color:#1c1946;border-radius:12px;padding:18px 22px;font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:1.7rem;line-height:1.1}
+.info{display:grid;gap:14px}
+.box{border-left:6px solid var(--coral);padding:2px 0 2px 16px}
+.box h3{font-size:1.4rem;margin-bottom:6px}
+.box p{margin:0;color:var(--muted)}
+footer{margin-top:72px;background:var(--indigo);color:#c4c1e6;text-align:center;padding:28px 20px;font-size:.92rem}
+@media(min-width:720px){.plans{grid-template-columns:repeat(3,1fr)}.about{grid-template-columns:200px 1fr}.info{grid-template-columns:repeat(3,1fr)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#">💪 Minta Edzőterem</a>
+      <div><a href="#berletek">Bérletek</a><a href="#orarend">Órarend</a><a href="#kapcsolat">Kapcsolat</a></div>
+    </nav>
+    <h1>Mozdulj meg<span>még ma.</span></h1>
+    <p>Minta Edzőterem – ez egy mintaoldal, minden szöveg és adat kitalált.</p>
+    <a class="btn" href="#berletek">Bérletek megnézése</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="berletek">
+    <h2>Bérletek</h2>
+    <div class="plans">
+      <div class="plan"><h3>Napi jegy</h3><div class="price">2 500 Ft</div><ul><li>Egy alkalom</li><li>Öltöző használat</li></ul></div>
+      <div class="plan hot"><h3>Havi bérlet</h3><div class="price">14 900 Ft <small>/ hó</small></div><ul><li>Korlátlan belépés</li><li>Csoportos órák</li><li>Bemutató edzés</li></ul></div>
+      <div class="plan"><h3>10 alkalmas</h3><div class="price">19 900 Ft</div><ul><li>3 hónapig érvényes</li><li>Bármikor felhasználható</li></ul></div>
+    </div>
+  </section>
+
+  <section id="orarend">
+    <h2>Heti órarend</h2>
+    <div class="sched">
+      <div><b>Hétfő 18:00</b><span>Kondicionáló edzés</span></div>
+      <div><b>Kedd 07:00</b><span>Reggeli jóga</span></div>
+      <div><b>Szerda 18:30</b><span>Kardió mix</span></div>
+      <div><b>Csütörtök 19:00</b><span>Erősítő alapok</span></div>
+      <div><b>Szombat 10:00</b><span>Nyújtás és mobilitás</span></div>
+    </div>
+  </section>
+
+  <section id="rolunk">
+    <h2>Rólunk</h2>
+    <div class="about">
+      <div class="stat">Minta János<br>vezetőedző</div>
+      <div>
+        <p>Szia, Minta János vagyok. Azért nyitottam a Minta Edzőtermet, hogy mindenki megtalálja a saját tempóját, kezdő és haladó is.</p>
+        <p>Kis létszámú órákat tartunk, személyes figyelemmel. Az első alkalom ingyenes!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kapcsolat">
+    <h2>Kapcsolat</h2>
+    <div class="info">
+      <div class="box"><h3>Cím</h3><p>1234 Mintaváros,<br>Fő utca 21.</p></div>
+      <div class="box"><h3>Nyitvatartás</h3><p>H–P: 6:00–21:00<br>Szo–V: 8:00–16:00</p></div>
+      <div class="box"><h3>Elérhetőség</h3><p>+36 70 555 0123<br>info@mintaedzo.hu</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Minta Edzőterem – minta weboldal, nem valódi edzőterem.</footer>
+</body>
+</html>
